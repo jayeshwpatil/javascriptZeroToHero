@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>counter application</title>
+        <style>
+           body {font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif}
+            .outerContainer {width: 100vw; height: 100vh; display: flex; justify-content: center; align-items: center;}
+            .innerContainer {border:1px solid #ccc; padding:20px; width: 250px; border-radius: 20px; box-shadow: 10px 10px 10px #ccc;  }
+            .heading {color: #000; text-align: center;}
+            .colorRed { color:#f00}
+           
+        </style>
+    </head>
+    <body>
+        <div class="outerContainer">
+            <div class="innerContainer">
+                <h2 class="heading">Character Counter</h2>
+                <textarea id="InputText" rows="7" style="width: 100%;"></textarea>
+                <p><strong>"Characters typed" : <span class="countNumber ">0</span></strong></p>
+            </div>
+        </div>
+        <script>
+           const inputSelector =  document.querySelector("#InputText")
+            const countNumber = document.querySelector(".countNumber")
+
+            const updateCount = ()=> {
+                countNumber.textContent = (inputSelector.value).length
+            }
+            inputSelector.addEventListener("input", updateCount)  
+            
+                 
+        </script>
+    </body>
+</html>

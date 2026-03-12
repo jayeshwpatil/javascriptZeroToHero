@@ -1,0 +1,10 @@
+Create a Character Counter for Textarea.
+
+Add a textarea where the user can type text.
+
+Below the textarea show a message like:
+"Characters typed: 0"
+
+As the user types, the character count should update live.
+
+If the user deletes text, the number should decrease accordingly.
