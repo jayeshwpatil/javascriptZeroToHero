@@ -1,0 +1,12 @@
+Build a small webpage with three buttons:
+Increase, Decrease, and Reset.
+
+A number should appear in the center of the page starting from 0.
+
+When the user clicks Increase, the number increases by 1.
+
+When the user clicks Decrease, the number decreases by 1.
+
+When the user clicks Reset, the number goes back to 0.
+
+The number on the screen must update instantly when buttons are clicked.
